@@ -17,14 +17,11 @@ List of users: Who will be using your system
 > In the broad context, the users of the system are going to be store owners and small business owners. This webpage will be easy to access and do the required functionalities like adding inventories, taking payments etc. This webpage will make the day to day transactions of the business easier and simpler. 
 Besides that, under our system the users are going to be administrators, cashiers and managers for their specific functions like work hour shift record and sales report management. The users will have the control on the system of the basis of their rank. Like the administrator will have the authority for almost everything within the system like adding and deleting the existing employees, adjusting the shifts for employees etc. 
 
+List of functionalities provided for each user: What are the features provided for each user to use?
 
-
-
-
-
-
-
-
+>The administrator will have all the features to change the setting of the system. It will be the administrator only who will have access to add and remove new users to the systems. The administrator can access the inventory data base whenever required. Basically, the administrator will have all the access as the managers and cashiers have as well.
+The manager will be responsible for allocating the work schedule for employees weekly and s/he will have the access to change it any time. The manager will be adding products to the inventory and will be updating it. Similarly, the manager will have the access to sales report, voiding the item sales, changing the added inventory. 
+ The cashiers will have access to the cash register and the sale system. The cashiers will need to clock-in and clock-out of their work shifts. They will and have to scan the item that the customer wants and apply to applicable method of the payments
 
 
 List of potential technologies being used: Like technology for database, language(s) of implementation etc.
