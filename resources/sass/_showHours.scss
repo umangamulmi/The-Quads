@@ -1,0 +1,22 @@
+.user-hours-group{
+  display: flex;
+  padding-bottom: 10px;
+  .user-name{
+    flex: 1;
+    select{
+      display: inline !important;
+      width: 75%;
+    }
+  }
+  .work-time{
+    padding-left: 10px;
+    flex: 1;
+    text-align: center;
+    input{
+      border-color: lightblue;
+      border-radius: 5px;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
