@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\Requests\MassDestroyProductRequest;
 use App\Http\Controllers\Requests\UpdateProductRequest;
 use App\Http\Controllers\Requests\StoreProductRequest;
-use App\Models\Products;
+use App\Models\Product;
 
 class ProductsController extends Controller
 {
@@ -15,7 +15,7 @@ class ProductsController extends Controller
     {
         $data = $this->getData($request);
 
-        $products = Products::all();
+        $products = Product::all();
 
         return view('admin.products.index', compact('products'))->with($data);
     }
@@ -31,19 +31,19 @@ class ProductsController extends Controller
     {
         $data = $this->getData($request);
 
-        $product = Products::create($request->all());
+        $product = Product::create($request->all());
 
         return redirect()->route('admin.products.index')->with($data);
     }
 
-    public function edit(Products $product, Request $request)
+    public function edit(Product $product, Request $request)
     {
         $data = $this->getData($request);
 
         return view('admin.products.edit', compact('product'))->with($data);
     }
 
-    public function update(UpdateProductRequest $request, Products $product)
+    public function update(UpdateProductRequest $request, Product $product)
     {
         $data = $this->getData($request);
 
@@ -52,13 +52,13 @@ class ProductsController extends Controller
         return redirect()->route('admin.products.index')->with($data);
     }
 
-    public function show(Products $product, Request $request)
+    public function show(Product $product, Request $request)
     {
         $data = $this->getData($request);
         return view('admin.products.show', compact('product'))->with($data);
     }
 
-    public function destroy(Products $product)
+    public function destroy(Product $product)
     {
         $product->delete();
 
@@ -67,7 +67,7 @@ class ProductsController extends Controller
 
     public function massDestroy(MassDestroyProductRequest $request)
     {
-        Products::whereIn('id', request('ids'))->delete();
+        Product::whereIn('id', request('ids'))->delete();
 
         return response(null, 204);
     }

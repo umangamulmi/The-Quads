@@ -1,0 +1,213 @@
+html,
+body {
+  background-color: #e1e1e160;
+  color: #636b6f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+.cash-register .title-bar {
+  line-height: 55px;
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+}
+
+.cash-register .title-bar .go-home {
+  float: left;
+  cursor: pointer;
+  padding-left: 30px;
+  font-size: 18px;
+  color: white;
+}
+
+.cash-register .title-bar .text {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-left: 100px;
+}
+
+.cash-register .title-bar .date-info {
+  margin-left: auto;
+  float: right;
+  font-size: 1.1em;
+  padding-right: 30px;
+}
+
+.cash-register .title-bar .date-info .username {
+  font-weight: bold;
+  color: #b9cebc;
+}
+
+.cash-register .body {
+  display: -webkit-box;
+  display: flex;
+}
+
+.cash-register .body .input-group {
+  width: 90%;
+  margin: 30px auto;
+  position: relative;
+}
+
+.cash-register .body .input-group i {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  z-index: 50;
+  font-size: 18px;
+}
+
+.cash-register .body .input-group .input-customer {
+  border-radius: 5px;
+  padding-left: 40px;
+  font-size: 17px;
+  padding-top: 0.7rem;
+}
+
+.cash-register .body .total-amount {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cash-register .body .total-amount :first-child {
+  padding-right: 50px;
+}
+
+.cash-register .body .added-item {
+  -webkit-box-flex: 1;
+          flex: 1;
+  background-color: white;
+  border: solid 1px lightslategrey;
+}
+
+.cash-register .body .added-item .container .list-group {
+  height: 65vh;
+  overflow-y: auto;
+}
+
+.cash-register .body .added-item .container .list-group .li-item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 5px 10px 30px !important;
+}
+
+.cash-register .body .added-item .container .list-group .li-item .name {
+  -webkit-box-flex: 1;
+          flex: 1;
+  align-self: center;
+}
+
+.cash-register .body .added-item .container .list-group .li-item .price {
+  -webkit-box-flex: 0.4;
+          flex: 0.4;
+  text-align: right;
+  align-self: center;
+}
+
+.cash-register .body .added-item .container .list-group .li-item .remove {
+  margin-left: 10px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.cash-register .body .added-item .container .list-group .li-item .remove:hover {
+  background-color: lightcoral;
+}
+
+.cash-register .body .added-item .added-btn-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cash-register .body .added-item .added-btn-group :first-child {
+  margin-right: 30px;
+}
+
+.cash-register .body .added-item .added-btn-group :nth-child(2) {
+  margin-left: 30px;
+}
+
+.cash-register .body .product-list {
+  -webkit-box-flex: 1;
+          flex: 1;
+  padding: 20px;
+  width: 100%;
+  display: block;
+}
+
+.cash-register .body .product-list .item {
+  display: inline-block;
+  border: solid 1px lightslategray;
+  margin: 10px 0px 10px 10px;
+  max-width: 130px;
+  min-width: 130px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  height: 100px;
+}
+
+.cash-register .body .product-list .item:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.cash-register .body .product-list .item .text {
+  width: 90%;
+  word-wrap: break-word;
+  line-height: normal;
+  margin: 50px auto 0 auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cash-register .body .customer-enter-cash {
+  -webkit-box-flex: 1;
+          flex: 1;
+  background-color: white;
+  border: solid 1px lightslategrey;
+}
+
+.cash-register .body .customer-enter-cash .cash-btn-group {
+  width: 80%;
+  border: solid 1px lightsteelblue;
+  margin: 0 auto;
+}
+
+.cash-register .body .customer-enter-cash .cash-btn-group .row {
+  margin: 20px;
+  -webkit-box-pack: center;
+          justify-content: center;
+  font-size: 1vw;
+}
+
+.cash-register .body .customer-enter-cash .cash-btn-group .row button {
+  width: 5vw;
+  height: 5vw;
+  max-width: 70px;
+  max-height: 70px;
+  font-size: 2em;
+}
+
+.cash-register .body .customer-enter-cash .customer-cash-btn-group {
+  text-align: center;
+}
+
+.cash-register .body .customer-enter-cash .customer-cash-btn-group :first-child {
+  margin-right: 1rem;
+}
+
