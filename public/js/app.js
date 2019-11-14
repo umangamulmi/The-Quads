@@ -37012,6 +37012,7 @@ $(document).ready(function () {
       return;
     }
 
+    console.log(dialog_title);
     e.preventDefault();
     $.ajax({
       type: 'POST',
@@ -37030,6 +37031,9 @@ $(document).ready(function () {
       }
     });
   });
+  $("#btn-cashRegister").click(function () {
+    window.location.href = "/cashRegister";
+  });
 });
 
 /***/ }),
@@ -37038,6 +37042,17 @@ $(document).ready(function () {
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
   \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/cashRegister.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/cashRegister.scss ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -37057,15 +37072,16 @@ $(document).ready(function () {
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/hours.scss ***!
-  \*****************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/hours.scss ./resources/sass/cashRegister.scss ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\Task\PHP\20191028\pos\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! D:\Task\PHP\20191028\pos\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! D:\Task\PHP\20191028\pos\resources\sass\hours.scss */"./resources/sass/hours.scss");
+__webpack_require__(/*! D:\Task\PHP\20191028\pos\resources\sass\hours.scss */"./resources/sass/hours.scss");
+module.exports = __webpack_require__(/*! D:\Task\PHP\20191028\pos\resources\sass\cashRegister.scss */"./resources/sass/cashRegister.scss");
 
 
 /***/ })
