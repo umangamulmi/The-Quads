@@ -32,5 +32,8 @@ Route::group(['middleware' => 'CheckUser'], function () {
     Route::resource('/clock', 'WorkHoursController');
     Route::post('/ajaxTimePost', 'Requests\TimeInOutRequestController@setTime');
 
+    Route::get('/cashRegister', 'CashRegisterController@index');
+    Route::post('/SalePost', 'CashRegisterController@store');
+    Route::get('/sale/index', 'TransactionController@index')->name('sale.index');
 });
 //Route::get('/login', 'Auth\LoginController@login');
