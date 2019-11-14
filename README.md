@@ -3,6 +3,17 @@ CSCE 34442019
 
 Group Members are as follows:
 1)Jenita Kawan
+<<<<<<< HEAD
+<<<<<<< HEAD
+2) Amit Pathak
+=======
+2) Umanga Mulmi // I am also one of the contributor
+>>>>>>> dc3d0b0961f6782fe5012a2fc1cc162e6aa2104a
+
+3) Samikshya Luitel
+
+>>>>
+=======
 2) Umanga Mulmi
 3) Amit Pathak
 4) Samikshya Luitel
@@ -28,3 +39,4 @@ List of potential technologies being used: Like technology for database, languag
 
 > We will be using C++ or JavaScript language for front end as we are familiar with this language and the React language for the back end which communicates between the database and the browser. We will be creating a database on sql for the list of all the inventories and their prices which we will be updating frequently. For the payment method we will be using the square service provider. That will be useful to take the credit card from the customer.
 
+>>>>>>> 12537703ff3b5856d1f6aceddcdb11de0ae049f6
