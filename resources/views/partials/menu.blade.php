@@ -38,14 +38,15 @@
             <li class="nav-item nav-logo">
                 <img src="{{asset('img/logo.png')}}" alt="logo">
             </li>
-            <li class="nav-item">
-                <a href="{{ route("admin.products.index") }}"
-                   class="nav-link {{ request()->is('admin/products') || request()->is('admin/products/*') ? 'active' : '' }}">
-                    <i class="fas fa-cogs nav-icon"></i>
-                    {{ trans('global.product.title') }}
-                </a>
-            </li>
-
+            @if($username === 'Administrator')
+                <li class="nav-item">
+                    <a href="{{ route("admin.products.index") }}"
+                       class="nav-link {{ request()->is('admin/products') || request()->is('admin/products/*') ? 'active' : '' }}">
+                        <i class="fas fa-cogs nav-icon"></i>
+                        {{ trans('global.product.title') }}
+                    </a>
+                </li>
+            @endif
             <li class="nav-item nav-dropdown">
                 <a class="nav-link  nav-dropdown-toggle">
                     <i class="fas fa-history nav-icon"></i>
@@ -54,25 +55,25 @@
                 <ul class="nav-dropdown-items">
                     <li class="nav-item">
                         <a href="{{ route("clock.view") }}"
-                           class="nav-link {{ request()->is('clock/view') || request()->is('clock/view/*') ? 'active' : '' }}" >
+                           class="nav-link {{ request()->is('clock/view') || request()->is('clock/view/*') ? 'active' : '' }}">
                             <i class="fas fa-clock-o nav-icon"></i>
                             View Employee Hours
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#"
+                        <a href="{{ route("sale.index") }}"
                            class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
                             <i class="fas fa-shopping-cart nav-icon"></i>
                             View Sales
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#"
-                           class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
-                            <i class="fas fa-bar-chart nav-icon"></i>
-                            View Sales Report
-                        </a>
-                    </li>
+                    {{--                    <li class="nav-item">--}}
+                    {{--                        <a href="#"--}}
+                    {{--                           class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">--}}
+                    {{--                            <i class="fas fa-bar-chart nav-icon"></i>--}}
+                    {{--                            View Sales Report--}}
+                    {{--                        </a>--}}
+                    {{--                    </li>--}}
                 </ul>
             </li>
             <li class="nav-item">

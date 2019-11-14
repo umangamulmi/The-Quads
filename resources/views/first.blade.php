@@ -45,11 +45,7 @@
                 <div class="text">Employee Clock In/Out</div>
             </div>
             <div class="cash-register">
-                <button
-                        type="button"
-                        data-target="#pincodeModal"
-                        data-toggle="modal"
-                        data-title="Cash Register">
+                <button type="button" id="btn-cashRegister">
                     <img src="{{asset('img/cash_register.png')}}" alt="Cash Register">
                 </button>
                 <div class="text">Cash Register</div>
