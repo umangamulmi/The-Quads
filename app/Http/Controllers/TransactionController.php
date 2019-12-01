@@ -28,3 +28,7 @@ class TransactionController extends Controller
     }
 
 }
+
+/**
+     * The application's route middleware.
+     */

@@ -89,7 +89,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Cache Key Prefix
+    | Cache Key-Prefix
     |--------------------------------------------------------------------------
     |
     | When utilizing a RAM based store such as APC or Memcached, there might
