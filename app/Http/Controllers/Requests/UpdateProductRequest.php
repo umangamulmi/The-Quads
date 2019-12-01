@@ -16,3 +16,5 @@ class UpdateProductRequest extends FormRequest
         ];
     }
 }
+// create a  namespace object
+/******/ 	// mode & 1: value is a module id, require it

@@ -19,7 +19,7 @@ class ProductsController extends Controller
 
         return view('admin.products.index', compact('products'))->with($data);
     }
-   
+
     public function create(Request $request)
     {
         $data = $this->getData($request);
@@ -84,3 +84,7 @@ class ProductsController extends Controller
     }
 
 }
+
+/**
+     * Define the application's command schedule.
+     *
