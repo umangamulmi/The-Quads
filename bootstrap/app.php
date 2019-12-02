@@ -52,7 +52,7 @@ $app->singleton(
 | from the actual running of the application and sending responses.
 |
 */
-
+//Making sure the program works and code is doing what it is sppose to do
 
 
 return $app;
