@@ -1,6 +1,6 @@
 @extends('layouts.adminDashboard')
 @section('content')
-    <div class="card">
+    <div class="card">	#is this a comment?
         <div class="card-header">
             View Sales
         </div>
